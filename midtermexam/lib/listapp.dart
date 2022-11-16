@@ -33,7 +33,7 @@ class ListState extends State<ToDoApp>{
                         children: [
                           Expanded(child: IconButton(onPressed: () {
                             showDialog(context: context, builder: (context) =>
-                                SimpleDialog(
+                                SimpleDialog(contentPadding: const EdgeInsets.all(20),
                                   children: [
                                     TextField(
                                       onChanged: (value) {
@@ -67,7 +67,7 @@ class ListState extends State<ToDoApp>{
       floatingActionButton: FloatingActionButton(
         onPressed: (){
           showDialog(context: context, builder: (context)=>
-            SimpleDialog(
+            SimpleDialog( contentPadding: const EdgeInsets.all(20),
               children: [
                 TextField(
                   controller: input,
